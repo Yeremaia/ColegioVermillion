@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/logos/logo.png">
+    <title>Admisiones</title>
+    <link rel="stylesheet" href="css/paginal_principal.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <header class="header-nosotros">
+            <div class="menu-imagen">
+
+                <a href="index.html" class="logo-imagen">
+                    <h1>Colegio Vermillion</h1>
+                    <img src="imagenes/logos/logo.png" alt="">
+                </a>
+                <nav class="nav">
+                    <ul class="Lista-padre-de-navegacion">
+                        <li class="listas-de-navegacion "><a href="index.html">INICIO</a></li>
+                        <li class="listas-de-navegacion menu-nosotros"><a href="#">ADMISIONES</a></li>
+                        <li class="listas-de-navegacion"><a href="contacto.html">CONTACTO</a></li>
+                        <li class="listas-de-navegacion"><a href="academico.html">ACADEMICO</a></li>
+                        <li class="listas-de-navegacion"><a href="iniciarSesion.php">INICIAR <span>SESION</span></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-admisiones">
+            <div class="div-requisitos">
+                <h2>Requisitos</h2>
+                <h4 class="titulo-requisitos">TODOS LOS GRADOS</h4>
+                <ul class="texto-requisitos">
+                  <li>- Acta de nacimiento original (fotocopia).</li>
+                  <li>- Dos fotografías 2×2.</li>
+                  <li>- Carta de escolaridad del centro de procedencia.</li>
+                  <li>- Certificado Médico.</li>
+                  <li>- Notas del curso anterior.</li>
+                  <li>- Fotocopias de las cédulas de los padres o pasaporte si son extranjeros.</li>
+                  <li>- Contrato de inscripción.<li>
+                </ul>
+
+                <h4 class="titulo-requisitos">PARA INICIAL</h4><span class="mini-titulo-requisitos">(además de los documentos para todos los grados).</span>
+                <ul class="texto-requisitos">
+                  <li>- Copia de la tarjeta de vacuna.</li>
+                  <li>- Certificado de chequeo de un oftalmólogo.</li>
+                </ul>
+
+                <h4 class="titulo-requisitos">PARA PRIMARIA</h4><span class="mini-titulo-requisitos">(además de los documentos para todos los grados).</span>
+                <ul class="texto-requisitos">
+                  <li>- Records de notas y Copias de los Registros de grado de los años anteriores firmado por el Distrito Educativo correspondiente.</li>
+                </ul>
+
+                <h4 class="titulo-requisitos">PARA SECUNDARIA</h4><span class="mini-titulo-requisitos">(además de los documentos para todos los grados).</span>
+                <ul class="texto-requisitos">
+                  <li>- Records de notas y actas de calificaciones (o copias de Registros de grado) de los años cursados firmado por el Distrito Educativo correspondiente.</li>
+                  <li>- Certificado de finalización de estudios Primarios y copia del registro, firmados por el Distrito Educativo correspondiente.</li>
+                  <li>- Los estudiantes con estudios realizados en el país, en la modalidad monolingüe (inglés), deben presentar el cambio de modalidad emitido por el Ministerio de Educación.</li>
+                  <li>- Copia tarjeta de Vacuna Covid – 19.</li>
+                </ul>
+            </div>
+
+            <div class="color-formulario">
+                <section class="section-formulario-admisiones">
+                    <form action="" class="formulario-admisiones">
+
+                        <div class="formulario-admision-div">
+                            <label for="nom">Nombre</label>
+                            <input type="text" id="nom" placeholder="Nombre*">
+                        </div>
+                        <div class="formulario-admision-div">
+                            <label for="ape">Apellido</label>
+                            <input type="text" id="ape" placeholder="Apellido*">
+                        </div>
+                        <div class="formulario-admision-div">
+                            <label for="dir">Dirección</label>
+                            <input type="text" id="dir" placeholder="Dirección*">
+                        </div>
+                        <div class="formulario-admision-div">
+                            <label for="nacionalidad">Nacionalidad</label>
+                            <input type="text" id="nacionalidad" placeholder="Nacionalidad*">
+                        </div>
+                        <div class="formulario-admision-div">
+                            <label for="edad">Edad</label>
+                            <input type="text" id="edad" placeholder="Edad*">
+                        </div>
+                        <div class="formulario-admision-div">
+                            <label for="tel" class="texto-admisiones">Teléfono</label>
+                            <input type="text" id="tel" placeholder="Teléfono*">
+
+                        </div>
+
+                        <div class="formulario-admision-div selecion">
+                            <label for="niveles">Niveles: </label>
+                            <select class="select" name="" id="niveles">
+                                <option value="" selected> Elija el nivel de educación*</option>
+                                <option value="ei">Educación Inicial</option>
+                                <option value="ep">Educación Primaria</option>
+                                <option value="es">Educación Secundaria</option>
+                            </select>
+                        </div>
+                        <div class="formulario-admision-div selecion curso">
+                            <label for="curso"> Curso: </label>
+                            <select class="select" name="" id="curso">
+                                <option value="" selected> Elija el curso realizado*</option>
+                                <option value="1ro">1ro</option>
+                                <option value="2do">2do</option>
+                                <option value="3ro">3ro</option>
+                                <option value="4to">4to</option>
+                                <option value="5to">5to</option>
+                                <option value="6to">6to</option>
+                            </select>
+                        </div>
+                        <div class="formulario-admision-div ">
+                            <label for="correo" class="texto-admisiones">Correo</label>
+                            <input type="email" id="correo" placeholder="Correo*" class="filas-admisiones">
+                        </div>
+                        <div class="enviar-admisiones">
+                            <button type="button" name="enviar" id="enviar">Enviar</button>
+
+                        </div>
+
+                    </form>
+                </section>
+            </div>
+
+        </main>
+        <footer>
+            <h6> <span>&copy;</span> derechos reservados por Mentes Informaticos - 2022 </h6>
+            <div class="redes-sociales">
+                <ul class="lista-redes-sociales">
+                    <li class="redes-sociales"><a href="https://es-la.facebook.com/LiceoAnagloria2019"
+                            target="onclik"><img src="imagenes/logos/facebook.png" alt=""></a></li>
+                    <li class="redes-sociales"><a href="https://www.instagram.com/p/CKUo_lTr2wL/?hl=es-la"
+                            target="onclik"><img src="imagenes/igicono2.jpg" alt=""></a></li>
+                    <li class="redes-sociales"><a href="https://www.youtube.com/channel/UCg0LEBG8By4l9gUGlxWUu7A"
+                            target="onclik"><img src="imagenes/logos/youtube.png" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,830 @@
+@import "reset.css";
+
+.flex-container{
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.informacion-de-la-pagina-pagina1{
+    display: flex;
+}
+
+/* -----------------------------header---------------------------------- */
+header{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background-color: rgb(3, 3, 151);
+    height: 100px;
+
+}
+
+.header-index .menu-inicio2 a{
+  text-decoration: underline;
+  color: yellow;
+}
+
+.menu-imagen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(3, 4, 29, 0.534);
+}
+
+.logo-imagen{
+    align-items: center;
+    margin: 2px;
+   display: flex;
+   text-decoration: none;
+    flex-basis: 30%;
+
+}
+.logo-imagen img{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50px;
+}
+.logo-imagen h1{
+    text-transform: uppercase;
+    padding-left: 20px;
+    font-size: 25px;
+    color: white;
+}
+.nav{
+    flex-basis: 60%;
+}
+.Lista-padre-de-navegacion{
+    display: flex;
+    justify-content: flex-end;
+}
+.listas-de-navegacion{
+    list-style: none;
+    text-align: center;
+    margin: 5px;
+
+}
+.listas-de-navegacion a{
+    text-decoration: none;
+    padding: 25px;
+    border-radius: 10px;
+
+    font-family: sans-serif;
+    color : white;
+}
+
+.lista-redes-sociales{
+    display: flex;
+    padding: 10px;
+    flex-basis: 10%;
+
+}
+.redes-sociales a img{
+    padding: 10px;
+
+    width: 25px;
+    height: 25px;
+}
+.redes-sociales a{
+    overflow: hidden;
+}
+
+.Lista-padre-de-navegacion li:hover a{
+    background-color: #5e5cff7c;
+    box-shadow: 2px 3px 2px rgba(18, 2, 27, 0.5);
+    color: white;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+ /*------------------------------FOOTER---------------------------------------*/
+ footer{
+    border-top: 3px solid black;
+     background-color: rgb(7, 8, 73);
+     display: flex;
+     flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+ }
+ footer h6{
+    margin: 25px;
+    color:white;
+    font-size: 16px;
+    font-family: sans-serif;
+ }
+ footer h6 span{
+    color: yellow;
+ }
+ .lista-redes-sociales{
+    display: flex;
+    padding: 10px;
+
+ }
+ .redes-sociales a img{
+    padding: 5px;
+    border-radius: 50%;
+    margin-left:10px ;
+    width: 35px;
+    height: 35px;
+ }
+ .redes-sociales a img:hover{
+     background-color: rgba(213, 219, 238, 0.808);
+     transition: 0.5s;
+ }
+ .redes-sociales a{
+    overflow: hidden;
+
+ }
+/*------------------------------ INICIAR SESION  -----------------------------*/
+.form-div{
+    background:url(../imagenes/login-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    box-shadow: 3px 3px 6px black;
+}
+.form h2{
+ font-size: 30px;
+ font-family: sans-serif;
+ background-color: red;
+ color: white;
+ text-align: center;
+ padding: 25px;
+ border-radius: 10px 10px 0 0;
+}
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.inputs .inputs-ingresar{
+    width: 80%;
+    padding: 20px;
+    margin: 10px;
+
+
+}
+.inputs-enviar{
+    margin-top: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+/*------------------------------estilos INDEX---------------------------------*/
+.main-cuerpo-pagina1{
+    margin-top: 2px;
+    background-color: rgb(243, 245, 247);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.section-parrafo-principal-pagina1{
+    height: 400px;
+    width: 100%;
+    position:relative;
+}
+.titulo-parrafo-index{
+    top: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    background: rgba(0, 0, 0, 0.322);
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+.titulo-parrafo-index-fondo{
+  width: 40%;
+  height: 50%;
+  background-color: rgba(1, 4, 6, 0.56);
+  border: 10px solid rgba(227, 225, 211, 0.71);
+  text-align: center;
+}
+.img-fondo{
+    width: 100%;
+    height: 100%;
+}
+.section-parrafo-principal-pagina1 .titulo-parrafo-index .titulo-parrafo-index-fondo h2{
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgb(248, 240, 240);
+    text-shadow: 2px 2px 6px black;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0 15px 0;
+}
+.section-parrafo-principal-pagina1  .titulo-parrafo-index .titulo-parrafo-index-fondo p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px;
+    font-family: sans-serif;
+    color: rgb(248, 240, 240);
+    text-shadow: 2px 2px 6px black;
+}
+
+.imagen-main-index img{
+    width: 100%;
+}
+.informacion-de-la-pagina-pagina1{
+    height: 400px;
+    margin-top: 3px;
+    /* margin-bottom: 20px; */
+    width: 100%;
+    background-color: rgba(8, 8, 133, 0.918);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.articulo-padre-tres:hover{
+    background-color: rgba(241, 31, 31, 0.979);
+    transition: 0.5s;
+}
+.articulo-padre-tres:hover h2{
+    color:white ;
+    transition: 0.5s;
+
+}
+.articulo-padre-tres:hover p, .articulo-padre-tres:hover ul li{
+    color: rgb(228, 225, 225);
+    transition: 1s;
+    text-shadow: 1px 1px 3px white;
+
+}
+
+.articulo-padre-tres{
+
+    padding: 20px;
+    margin: 5px;
+    width: 25%;
+    border-radius:10px;
+    zoom: 1;
+    background-color: white;
+    height: 300px;
+
+}
+.articulo-padre-tres h2{
+    color: darkblue;
+    letter-spacing: 1px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family:  sans-serif;
+    padding: 20px 20px 0 0;
+}
+.articulo-padre-tres p{
+    color: rgb(173, 131, 131);
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family:  sans-serif;
+    padding: 20px 10px 0 0;
+}
+
+.articulo-padre-tres ul li {
+  color: rgb(173, 131, 131);
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-family:  sans-serif;
+  padding: 5px 10px 0 0;
+}
+
+
+.section-parrafo-secundario-pagina1{
+    animation: cambiar 7s ease infinite ;
+    background:linear-gradient(100deg, rgb(81, 144, 238),rgb(189, 18, 137),rgb(221, 15, 187),rgb(34, 247, 87)) ;
+    background-size:400% 400% ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 300px;
+    margin-top: 2px;
+}
+.division{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-parrafo-secundario-pagina1 .division h2{
+    color: white;
+    font-size: 22px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family:  sans-serif;
+    padding: 5px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.section-parrafo-secundario-pagina1 .division p{
+    font-size: 16px;
+    width: 60%;
+    color: white;
+    text-align: center;
+    width: 60%;
+}
+@keyframes cambiar{
+    0%{ background-position: 0 50%;}
+    50%{ background-position: 100% 50%;}
+    100%{ background-position: 0 50%;}
+
+}
+
+/*---------------------header pagina de contacto-----------------------*/
+
+.header-contacto .menu-contacto a{
+  text-decoration: underline;
+  color: yellow;
+}
+
+/*-------------------------header pagina de eventos---------------------------*/
+.header-eventos .menu-evento a{
+  text-decoration: underline;
+  color: yellow;
+}
+
+.menu-inicioSesion a {
+  text-decoration: underline;
+  color: yellow;
+}
+
+/*-----------------------------header nosostros------------------------------*/
+.header-nosotros .menu-nosotros a{
+  text-decoration: underline;
+  color: yellow;
+}
+
+/*--------------------------main contacto------------------------------*/
+.main-contacto{
+    background-color: aliceblue;
+    border-top: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+}
+.inframe-contacto1 {
+    width: 50%;
+}
+
+.inframe-contacto1 iframe{
+    width: 100%;
+    height: 500px;
+}
+.section-contacto-informacion{
+    width: 50%;
+    background-color: rgba(1, 4, 7, 0.774);
+}
+.section-contacto-informacion h3{
+    color: rgb(231, 228, 224);
+    font-size: 32px;
+    padding: 40px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(241, 238, 238, 0.856);
+    text-align: center;
+    text-transform: uppercase;
+}
+.section-contacto-informacion article{
+
+    display: flex;
+    flex-wrap: wrap;
+    height: 75%;
+    align-content: space-around;
+}
+.section-contacto-informacion article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding-left:  20px;
+}
+
+.section-contacto-informacion article .contacto-icono  img{
+    background-color: white;
+    border-radius: 30%;
+    width: 60px;
+    height: 60px;
+}
+.section-contacto-informacion article .contacto-telefono img{
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.section-contacto-informacion article .contacto-horarios img{
+    background-color: white;
+    border-radius: 30%;
+    width: 60px;
+    height: 60px;
+}
+.section-contacto-informacion article p{
+    color: aliceblue;
+    margin-left:20px;
+    padding: 10px;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.section-contacto-formulario{
+    border-top: 3px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+.section-parrafo-secundario-pagina1{
+    width: 100%;
+}
+/*-----------------------Requisitos ADMISIONES-------------------------------*/
+.main-admisiones{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.div-requisitos {
+     font-size: 18px;
+     border-top: solid 2px rgb(115, 0, 0);
+}
+
+.div-requisitos h4 {
+     color: rgb(9, 0, 116);
+    font-family: sans-serif;
+    text-shadow: 1px 1px 2px black;
+    font-size: 25px;
+    text-align: center;
+}
+
+.div-requisitos h2 {
+    font-family: Arial;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    color:  rgb(115, 0, 0);
+    font-size: 30px;
+    padding-top: 10px;
+
+}
+
+.titulo-requisitos  {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.mini-titulo-requisitos{
+ color: rgb(9, 0, 116);
+ font-family: sans-serif;
+ text-shadow: 1px 1px 3px black;
+ font-size: 16px;
+ margin-left: 34%;
+}
+
+.texto-requisitos li {
+  padding-bottom: 10px;
+}
+
+.texto-requisitos {
+  margin-left: 10%;
+  padding-top: 20px;
+}
+
+
+/*---------------------------Formulario ADMISIONES --------------------------*/
+
+.section-formulario-admisiones{
+     border-top: 3px solid rgba(0, 0, 0, 0.877);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+.formulario-admisiones{
+     background-color: rgba(0, 0, 0, 0.644);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 50%;
+}
+.formulario-admision-div{
+     padding: 10px;
+      width: 100%;
+      text-align: center;
+}
+.selecion{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.selecion label{
+    padding-right:10px;
+}
+.curso label{
+    margin-right:10px;
+}
+
+
+.formulario-admision-div label{
+   display: block;
+   font-size: 20px;
+   margin-bottom: 10px;
+   color: white;
+}
+.formulario-admision-div input{
+    width: 70%;
+    padding: 10px;
+}
+.formulario-admision-div textarea{
+    width: 100%;
+}
+.formulario-admision-div select{
+    width: 61%;
+}
+.enviar-admisiones{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.enviar-admisiones button{
+    width: 72%;
+    background: rgb(131, 7, 7);
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.enviar-admisiones button:hover{
+
+    background-color: rgb(238, 46, 46);
+    color: rgb(255, 254, 254);
+    transition: 1s;
+}
+
+/*--------------------------formulario contacto------------------------------*/
+.color-formulario{
+    background: url("../imagenes/fondo-contacto.jpg");
+    overflow: hidden;
+    width: 100%;
+}
+.formulario-contacto{
+    background-color: rgba(0, 0, 0, 0.644);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 50%;
+}
+.formulario-contacto-div{
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+}
+.genero{
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+}
+.formulario-contacto-div label{
+    display: block;
+   font-size: 20px;
+   margin-bottom: 10px;
+   color: white;
+}
+.formulario-contacto-div input{
+    width: 70%;
+}
+.formulario-contacto-div textarea{
+    width: 70%;
+}
+.formulario-contacto-div select{
+    width: 50%;
+}
+
+/*-----------------------------------Academico--------------------------------*/
+.main-academico{
+    width: 100%;
+}
+.section-academico{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(206, 205, 204);
+
+}
+
+.section-academico .titulo-academico{
+ Width: 100%;
+ border: solid 3px white;
+ border-radius: 20px;
+  margin: 10px 100px 0px 100px;
+  /* padding: 15px 10px 15px 10px; */
+  text-align: center;
+  font-family: Arial;
+  font-size: 30px;
+  text-shadow: 1px 1px 3px black;
+}
+.section-academico ul {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.section-academico ul li{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30%;
+    margin:3px  10px 10px 10px;
+    overflow: hidden;
+}
+.section-academico ul li a img{
+    margin: 10px;
+    height: 270px;
+    width: 370px;
+}
+.section-academico ul li h3{
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.section-academico ul li p{
+    width: 90%;
+    text-align: justify;
+}
+.section-academico ul li time{
+    width: 100%;
+
+}
+
+/* ---------------------aside academico--------------------------- */
+
+.aside-academico{
+    width: 100%;
+    height: 200px;
+     margin: auto;
+     overflow: hidden;
+}
+.aside-academico .slider-aside{
+    display: flex;
+
+    width: calc(300px*14);
+    height: 200px;
+
+}
+.aside-academico .links-aside-academico{
+    animation: scrolli  20s linear infinite;
+    box-shadow: 2px 2px 5px black;
+    background-color: rgba(17, 17, 121, 0.945);
+    text-decoration: none;
+    margin: 3px;
+    padding: 20px 10px 20px 10px ;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+.aside-academico .links-aside-academico h2{
+    font-family: sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: rgb(237, 243, 245);
+    text-shadow: 1px 1px 3px black;
+
+}
+.aside-academico .links-aside-academico:hover{
+    background-color: rgb(14, 8, 68);
+    transition: 1s;
+}
+
+.links-aside-academico figcaption:hover{
+    color: white;
+    text-shadow: 1px 5px 5px black;
+    transition: 1s;
+}
+
+.aside-academico .links-aside-academico:hover h2{
+    transition: .4s;
+    text-decoration: underline;
+}
+
+.links-aside-academico{
+  display:flex;
+  flex-wrap: wrap;
+}
+.links-aside-academico img{
+  width: 100%;
+  height: 100%;
+  position:relative;
+  border-radius: 3%;
+}
+.links-aside-academico figcaption{
+  position:absolute;
+  top: 80%;
+  color: white;
+  width: 80%;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px black;
+  font-family: sans-serif;
+}
+
+@keyframes scrolli {
+    0% { transform: translateX(0);
+         -webkit-transform: translateX(0) ;
+   }
+   100%{
+     transform: rotateX(calc(-300px*5));
+
+     -webkit-transform: translateX(calc(-317px*5));
+
+   }
+ }
+
+ /*==========================================================================*/
+ /*============================== MOVIL =====================================*/
+ /*==========================================================================*/
+ @media screen and (max-width: 700px) {
+   /*---------------------- HEADER -----------------*/
+   header {
+     text-align: center;
+   }
+
+   .Lista-padre-de-navegacion {
+     display: flex;
+     flex-direction: column;
+     background-position: left;
+     width: 10px;
+     padding: 30px;
+   }
+
+
+  /*---------------------- Stylo index ---------------------*/
+   .informacion-de-la-pagina-pagina1{
+       height: auto;
+   }
+
+
+  /*---------------------- ACADEMICO ---------------------*/
+  .section-academico ul li{
+    width: 100%;
+  }
+
+ }
+
+
+/*============================================================================*/
+/*=============================  TABLET  =====================================*/
+/*============================================================================*/
+
+ @media screen and (max-width: 768px) {
+  /*---------------------- ADMISIONES ---------------------*/
+   .mini-titulo-requisitos{
+     font-size: 13px;
+     margin: 90px;
+   }
+
+   .titulo-parrafo-index-fondo {
+     padding: 25px;
+     height: 330px;
+     text-align: center;
+     }
+
+     .articulo-padre-tres{
+       height: auto;
+       padding: 20px;
+       }
+
+       .section-parrafo-secundario-pagina1{
+         height: auto;
+         }
+
+  /*---------------------- STYLOS INDEX ---------------------*/
+ }

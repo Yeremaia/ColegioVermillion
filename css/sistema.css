@@ -1,0 +1,1542 @@
+@import "reset.css";
+
+.tabla-eliminar-curso{
+  width: 46%;
+  margin-left: 25.5%;
+  background-color: rgb(198, 238, 255);
+}
+
+.campos-tabla-asistencia th {
+  font-size: 24px;
+}
+
+.campos-tabla-asistencia a img {
+  position: relative;
+}
+
+/*=============================== TABLA ====================================*/
+.continer-table {
+    overflow-x: auto;
+  }
+
+.continer-table table{
+    min-width: 800px;
+  }
+
+/*================================  MENU  ==================================*/
+.materia-botones{
+  display:flex;
+  flex-direction: row;
+  margin: 0 30px 20px 10px;
+  align-items: center;
+}
+
+.materia-botones li {
+  margin-left: 25px;
+}
+
+.materia-botones li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Roboto_Flex';
+}
+
+.icono-home {
+  height: 24px;
+}
+
+.imagen-icono-abajo{
+  position: absolute;
+  left: 87%;
+  top: 30%;
+}
+
+.imagen-icono-abajo-2{
+  position: absolute;
+  left: 76%;
+  top: 33%;
+}
+
+ .imagen-icono-abajo-2 a img {
+   height: 30px;
+   display: flex;
+   align-items: center;
+   margin-left: 30px;
+ }
+
+.imagen-icono-abajo a img{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.imagen-icono-abajo a, .imagen-icono-abajo-2 a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/*================================  HEADER  ==================================*/
+.menu-all{
+  display: flex;
+  position: relative;
+  padding: 25px;
+  max-height: 110px;
+  background-color: rgba(3, 4, 29, 0.61);
+  box-shadow: 2px 3px 2px rgba(18, 2, 27, 0.5);
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+   .conexion_usuario{
+     top: 56%;
+     position: absolute;
+   }
+
+   .contenedor-logo{
+     display: flex;
+     position: relative;
+    left: 40%;
+   }
+
+  .contenedor-logo-sistema{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    gap: 10px;
+  }
+
+   .contenedor-logo-sistema h1{
+     font-size: 25px;
+     color: white;
+     font-family: sans-serif;
+   }
+
+  .contenedor-logo-sistema img{
+    max-width: 70px;
+  }
+
+  .lista-padre-menu{
+    align-items: center;
+  }
+
+#imagen-fondo-header {
+ position: absolute;
+ max-height: 120px;
+ width: 100%;
+}
+
+.lista-padre-menu {
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+}
+
+.lista-menu {
+ list-style: none;
+ text-align: center;
+ margin: 5px;
+}
+
+.lista-menu a {
+ text-decoration: none;
+ padding: 25px;
+ border-radius: 10px;
+ font-family: sans-serif;
+ color : white;
+ border-radius: 10px;
+ padding: 24px;
+ font-weight: bold;
+}
+
+.lista-menu:hover a{
+   background-color: #5e5cff7c;
+   box-shadow: 2px 3px 2px rgba(18, 2, 27, 0.5);
+   color: white;
+   font-weight: bold;
+   transition: 0.5s;
+   border-radius: 10px;
+   padding: 24px;
+}
+
+#imagen-cerrar-sesion {
+ height: 20px;
+ margin-left: 5px;
+ position: absolute;
+}
+
+/* ====================IMAGEN PARA SABER QUE USUARIO ES===================== */
+.saber-admin  {
+height: 40px;
+width: 35px;
+}
+
+#imagen-fondo-header {
+  position: absolute;
+  height: 150px;
+  width: 100%;
+}
+.conexion_usuario{
+  display: flex;
+  align-items: center;
+  width: 20%;
+  left: 20px;
+}
+
+.conexion_usuario h6, .conexion_usuario p {
+  color: white;
+}
+
+.nombre_abajo {
+  margin-left: 10px;
+}
+
+.nombre_abajo p {
+font-family: sans-serif;
+font-size: 15px;
+}
+
+/*======================== RAYA MENU HEADER  =================================*/
+.navegacion-inicio, .materia-navegacion, .navegacion-calificaciones, .navegacion-curso, .navegacion-profesor{
+  text-decoration: underline;
+  color: red;
+}
+
+/*============================ Icono Titulo ==================================*/
+.titulo-asistencia img {
+  width: 30px;
+}
+
+/*============================= Iconos ======================================*/
+.editar_materia{
+    max-width: 25px;
+}
+
+.editar_profesor{
+  max-width: 25px;
+}
+
+.eliminar_profesor{
+    max-width: 25px;
+  }
+
+.editar_estudiante {
+  max-width: 25px;
+}
+
+.ver_nota {
+  max-width: 25px;
+}
+
+.eliminar_estudiante {
+  max-width: 25px;
+}
+
+.agregar_calificacion {
+  max-width: 60px;
+  padding-left: 34%;
+  text-decoration: none;
+}
+
+.agregar-asistencia a {
+  text-decoration: none;
+  color: rgb(7, 38, 131);
+  font-family: 'Roboto_Flex';
+}
+
+.editar_calificacion {
+    max-width: 25px;
+}
+
+/*============================== Inicio =================================*/
+
+#fondo-azul{
+  background: radial-gradient(circle, rgba(79,183,237,1) 0%, rgba(24,71,126,1) 100%);
+}
+
+.tabla-inicio-admin{
+  width: 60%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px black;
+  margin: 0 auto;
+  margin-top: 75px;
+  justify-content: center;
+}
+
+.datos-nombre{
+  margin: 30px;
+  padding-top: 30px;
+}
+
+.links-inicio-admin{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.main-datos-personales{
+  min-height: 50px;
+  margin: 10px;
+}
+
+.links-inicio-admin img{
+  width: 30px;
+}
+
+.tabla-inicio-admin tr{
+   width: 100%;
+   flex-grow: 1;
+   display: flex;
+   align-items: center;
+   gap: 60px;
+   margin: auto;
+  }
+
+  .tabla-inicio-admin tr th {
+     width: 150px;
+  }
+
+  .tabla-inicio-admin tr th a{
+    justify-content: center;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tabla-inicio-admin tr th a p{
+    width: 100%;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+
+  .tabla-inicio-admin tr th p{
+    color: black;
+  }
+
+  .contenedor-td{
+       display: flex;
+       justify-content: space-around;
+  }
+
+  .tabla-inicio-admin tr td a{
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+  }
+
+  .tabla-inicio-admin tr td a p {
+    width: 100%;
+    text-align: center;
+  }
+
+.tabla-accesorapido{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+.tabla-accesorapido{
+  display: flex;
+  margin-top: 40px;
+}
+
+.tablaMateria{
+  display: flex;
+  min-height: 100px;
+  color: white;
+  margin-left: 90px;
+}
+
+.tablaMateria tr {
+  display: flex;
+  flex-direction: column;
+  min-height: 40px;
+  padding: 10px 44px 30px 44px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4%;
+  box-shadow: 2px 3px 2px rgba(18, 2, 27, 0.5);
+  background-color: rgba(3, 4, 29, 0.61);
+}
+
+
+.tablaMateria tr th{
+  width: 150%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-family: 'Roboto_Flex';
+  font-size: 22px;
+}
+
+.tablaMateria tr td{
+  padding: 13px;
+  color: white;
+}
+
+.tablaMateria tr td a{
+  text-decoration: none;
+  color: white;
+}
+
+.icono-tabla-1, .icono-tabla-3, .icono-tabla-2  {
+  width: 40px;
+  border-radius: 90%;
+  color: white;
+}
+
+.icono-tabla-1:hover, .icono-tabla-2:hover, .icono-tabla-3:hover{
+  background-color: rgb(255, 254, 254);
+  box-shadow: 2px 3px 2px rgba(18, 2, 27, 0.5);
+  transition: 0.5s;
+}
+
+.icono-tabla-inicio{
+ flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.icono-tabla-inicio figcaption{
+  width: 100%;
+  text-align: center;
+}
+
+.tablaMateria tr td a:hover {
+  background-color: #5e5cff7c;
+  color: white;
+  box-shadow: 2px 3px 2px rgba(18, 2, 27, 0.5);
+  transition: 0.5s;
+}
+
+/*=========== estudianteInicio, profesorInicio, adminInicio (MAIN) ===========*/
+
+.main-all {
+  font-family: sans-serif;
+  padding-bottom: 40px;
+}
+
+.titulo-imagen-main {
+  position: absolute;
+}
+
+.titulo-imagen-main img {
+  height: 170px;
+  width: 170px;
+  margin: 50px 0 0 320px;
+}
+
+.datos-nombre {
+  margin-top: 20px;
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.span-datos-nombre {
+  color: rgb(131, 7, 7);
+}
+
+.texto-main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 41%;
+  padding-top: 4%;
+}
+
+.texto-main-lista {
+  position: absolute;
+  padding-top: 18%;
+  margin-left: 23%;
+  font-size: 20px;
+}
+
+.texto-main p {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.texto-main-datos {
+  color: rgb(7, 38, 131);
+}
+
+/*================================ VISUALIZAR MATERIA ========================*/
+.visualizar-clase{
+      width: 100%;
+      background-color:  #093F87;
+      font-family: sans-serif;
+      min-height: 70px;
+      border-bottom: solid 2px black;
+  }
+
+  .regresar-atras  {
+     height: 30px;
+     width: 35px;
+     }
+
+  .visualizar-clase ul li .nose:hover{
+    background: none;
+  }
+
+  .visualizar-clase ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70px;
+
+  }
+  .visualizar-clase ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 3%;
+    padding: 20px 40px;
+  }
+   .visualizar-clase ul li a:hover{
+        background-color: white;
+        color: #01132B;
+
+   }
+   .editarInicio ul li .editarInicioLink {
+      text-decoration: underline;
+   }
+
+  @media only screen and (max-width: 700px) {
+   .visualizar-clase ul{
+     flex-wrap: wrap;
+     height: auto;
+
+   }
+   .visualizar-clase ul li{
+     width: 100%;
+     border-bottom: solid 1px white;
+   }
+   .visualizar-clase ul li a{
+   display: block;
+    padding:20px;
+    text-align:center;
+    border-radius: 0;
+   }
+  }
+
+
+/*=============================== MATERIA ====================================*/
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.materia {
+  display: flex;
+  color: #33506B;
+  font-weight: bold;
+  font-family: arial;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+  font-size: 35px;
+}
+
+header{
+  width: 100%;
+}
+
+main{
+  width: 100%;
+}
+
+
+#table{
+   width: 100%;
+   background-color: black;
+}
+
+#table tr{
+    width: 100%;
+    display: flex;
+}
+
+  #table th{
+    border: 1px solid rgb(198, 238, 255);
+    font-size: 19px;
+}
+
+
+#table tr th{
+  width: 100%;
+  font-family: 'Roboto_Flex' helvetica verdana sans-serif;
+  font-size: 19px;
+  padding: 20px;
+  display:flex;
+  justify-content: center;
+}
+
+table .tr th{
+  background-color: rgb(198, 238, 255);
+  color: black;
+}
+
+table .dias-semana th{
+ color: white;
+}
+
+#table .tr td{
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 19px;
+  padding: 20px;
+  background-color: rgb(198, 238, 255);
+  color: white;
+}
+
+.dias-semana {
+background-color: #33506B;
+}
+
+.dias-semana td{
+  width: 100%;
+  font-family: 'Roboto_Flex' helvetica verdana sans-serif;
+  font-size: 19px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+footer{
+   width: 100%;
+}
+
+.formulario-admin input {
+  background: rgb(131, 7, 7);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  width: 15%;
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+th a {
+  display: flex;
+  color: blue;
+  align-items: center;
+  padding: 20px 20px 10px 20px;
+  font-size: 19px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ th a:hover {
+  color: red;
+  transition: 1s;
+}
+
+.formulario-admin input:hover {
+  background-color: rgb(238, 46, 46);
+  color: rgb(255, 254, 254);
+  transition: 1s;
+}
+
+/*=========================== CALIFICACIONES =================================*/
+.encabezados-notas {
+  display: flex;
+  color: #33506B;
+  font-weight: bold;
+  font-family: arial;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+  font-size: 35px;
+}
+
+.texto-formulario-notas {
+  margin-top: 20px;
+}
+
+.texto-formulario-notas #enlace-notas {
+  font-size: 17px;
+}
+
+.tablas-notas {
+  border: 1px solid rgb(198, 238, 255);
+  font-size: 22px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#nombreEstudiante-notas {
+  color: white;
+  font-family: 'Roboto_Flex' arial;
+  font-size: 27px;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.tablas-notas tr .materia-notas{
+  color: black;
+  padding: 10px 20px 10px 33px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.tablas-notas .parciales {
+  background-color: #33506B;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tablas-notas tr th {
+  padding: 10px 50px 10px 68px;
+}
+
+.formulario-notas {
+  text-align: center;
+}
+
+.formulario-notas a {
+  color: rgb(7, 38, 131);
+  margin-top: 1.7%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*============================ EDITAR CURSO ================================*/
+.nombre-editar-curso-admin {
+  font-size: 20px;
+  position: absolute;
+  padding-top: 37px;
+  left: 31%;
+}
+
+.nombre-editar-curso-admin-2 {
+  font-size: 20px;
+  position: absolute;
+  left: 42%;
+  padding-top: 37px;
+}
+
+#asistencia1, #asistencia2, #asistencia3, #asistencia4, #asistencia5 {
+  margin: 70px 0px 0 100px;
+}
+
+.agregar-usuario-botones-4 {
+  padding-top: 70px;
+  position: absolute;
+  top: 75%;
+  left: 39%;
+}
+
+.agregar-usuario-botones-4 p {
+  margin-left: 64px;
+}
+
+.agregar-usuario-botones-4 p a {
+  text-decoration: none;
+}
+
+/*============================== EDITAR NOTAS ==============================*/
+.editar-nota-1{
+float: left;
+width: 360px;
+text-align: center;
+}
+
+.editar-nota-nombre{
+text-align:center;
+font-size: 20px;
+}
+
+.agregarUsuario-grupo-2{
+    background-color: white;
+    border: 2px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 710px;
+    height: 481px;
+    box-shadow: 3px 3px 6px black;
+}
+
+.agregarUsuario-grupo-2 div input, .agregarUsuario-grupo div select {
+  height: 40px;
+  margin-left: 45px;
+  margin-top: 14px;
+  font-size: 20px;
+}
+
+.nombre-materia-editar {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.editar-nota-botones input{
+  margin: 5px 0px 0px 10px;
+  padding: 0px 25px;
+  background-color: rgb(131, 7, 7);
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+#nota1, #nota2, #nota3, #nota4{
+  margin: 90px 0px 0 120px;
+}
+
+.editar-notas-perido-2 input, .editar-notas-perido-1 input, .editar-notas-perido-3 input, .editar-notas-perido-4 input, .editar-notas-perido-5 input {
+  width: 40px;
+}
+
+.grupo-notas-izquierdo{
+  position: absolute;
+  margin-left: 25%;
+  width: 17%;
+  top: 20.6%;
+}
+
+.grupo-notas-izquierdo-2{
+  position: absolute;
+  margin-left: 25%;
+  width: 17%;
+  top: 27.6%;
+}
+
+.editar-notas-perido-1 label, .editar-notas-perido-2 label {
+  font-size: 20px;
+  position: absolute;
+  padding-top: 54px;
+  left: 31%;
+}
+
+.editar-notas-perido-3 label, .editar-notas-perido-4 label {
+  font-size: 20px;
+  position: absolute;
+  left: 40%;
+  padding-top: 54px;
+}
+
+.agregar-usuario-botones-3{
+  padding-top: 20px;
+  position: absolute;
+  top: 75%;
+  left: 39%;
+}
+
+.agregar-usuario-botones-3 p {
+  margin-left: 64px;
+}
+
+.agregar-usuario-botones-3 p a {
+  text-decoration: none;
+}
+
+ #boton-guardar-3 {
+  margin: 20px 0 0 40px;
+  padding: 10px 50px;
+  background: radial-gradient(circle, rgba(79,183,237,1) 0%, rgba(24,71,126,1) 100%);
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+ #boton-guardar-3:hover {
+  background: radial-gradient(circle, rgba(26, 134, 190, 1) 0%, rgba(2, 41, 85, 1) 100%);
+  color: rgb(255, 254, 254);
+  transition: 1s;
+}
+
+/*============================ PROFESOR ==================================*/
+#titulo-profesores {
+  display: flex;
+  color: #33506B;
+  font-weight: bold;
+  font-family: arial;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+  font-size: 35px;
+}
+
+#tabla-profesor {
+  background-color: rgb(198, 238, 255);
+  font-size: 19px;
+  margin-top: 22px;
+  overflow: hidden;
+}
+
+#tabla-profesor .titulos-nombres-profesor {
+  background-color:  #33506B;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto_Flex' arial;
+  font-size: 19px;
+}
+
+.titulos-nombres-profesor td {
+  padding: 20px 0px;
+}
+
+#tabla-profesor tr th {
+  padding: 10px 3px;
+  border: 2px solid rgb(198, 238, 255);
+  font-size: 18px;
+  font-family: 'Roboto_Flex', arial;
+}
+
+.tabla-profesor-nombres {
+  font-weight: bold;
+}
+
+.espacio-profesor {
+  padding: 0 10px;
+}
+
+#tabla-profesor tr th a {
+  display: flex;
+  color: blue;
+  align-items: center;
+  padding: 20px 20px 10px 20px;
+  font-size: 19px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#tabla-profesor tr th a:hover {
+  color: red;
+  text-shadow: 2px 2px 3px rgb(30, 93, 201);
+  transition: 1s;
+}
+
+.boton-select select{
+  height: 26px;
+  font-size: 14px;
+}
+
+.boton-select input {
+  margin-left: 13px;
+  height: 26px;
+  width: 75px;
+  font-size: 14px;
+}
+
+/* ==============================SELECT EDITADO============================== */
+
+.boton-select select{
+  height: 27px;
+  font-size: 18px;
+  margin: 10px;
+  background-color: rgb(198, 238, 255);
+}
+
+.boton-select select option{
+padding: 10px;
+background-color: rgb(198, 238, 255);
+}
+
+.nosetres {
+  background-color: rgb(198, 238, 255);
+}
+
+.boton-select input {
+  margin-left: 13px;
+  height: 26px;
+  width: 75px;
+  font-size: 14px;
+}
+
+/*============================ ESTUDIANTE ==================================*/
+#titulo-estudiantes {
+  display: flex;
+  color: #33506B;
+  font-weight: bold;
+  font-family: arial;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+  font-size: 35px;
+}
+
+#tabla-estudiantes {
+  background-color: rgb(198, 238, 255);
+  font-size: 22px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#tabla-estudiantes .titulos-nombres-estudiantes {
+  background-color:  #33506B;
+  color: white;
+  text-align: center;
+  font-family: arial;
+  font-size: 19px;
+}
+
+.titulos-nombres-estudiantes td {
+  padding: 20px 10px;
+}
+
+#tabla-estudiantes tr th {
+  padding: 10px 3px;
+  border: 2px solid rgb(198, 238, 255);
+  font-size: 18px;
+  font-family: 'Roboto_Flex', arial;
+}
+
+.tabla-estudiantes-nombres {
+  font-weight: bold;
+}
+
+#tabla-estudiantes tr th a {
+  display: flex;
+  color: blue;
+  align-items: center;
+  padding: 30px 20px 10px 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#tabla-estudiantes tr th a:hover {
+  color: red;
+  text-shadow: 2px 2px 3px rgb(30, 93, 201);
+  transition: 1s;
+}
+
+/*=====================BTN ESTUDIANTE - PROFESOR ============================*/
+.formulario-agregar {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.formulario-agregar input {
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(131, 7, 7);
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.formulario-agregar input:hover {
+  background-color: rgb(238, 46, 46);
+  color: rgb(255, 254, 254);
+  transition: 1s;
+}
+
+/*================================= CURSO ====================================*/
+.titulo-asistencia {
+  color: #33506B;
+  font-weight: bold;
+  font-family: arial;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  font-size: 35px;
+}
+
+.tabla-asistencia {
+  background-color: rgb(198, 238, 255);
+  font-family: arial;
+  font-size: 22px;
+  border-radius: 2%;
+  width: 100%;
+}
+
+.tabla-asistencia-titulo th {
+  background-color: #33506B;
+  color: white;
+  font-family: 'Roboto_Flex' helvetica verdana sans-serif;
+  font-size: 19px;
+  padding: 20px;
+}
+
+.campos-tabla-asistencia th{
+  padding: 10px;
+  text-align: center;
+}
+
+.formulario-curso, .mini-explicacion {
+  display: flex;
+  justify-content: center;
+}
+
+.formulario-curso input:hover {
+  background-color: rgb(238, 46, 46);
+  color: rgb(255, 254, 254);
+  transition: 1s;
+}
+
+.mini-explicacion {
+  margin-top: 1%;
+  font-size: 20px;
+}
+
+.mini-explicacion p {
+  padding: 0 2%;
+  color: rgb(131, 7, 7);
+  font-weight: bold;
+}
+
+.mini-explicacion p span{
+  color: black
+}
+
+.agregar-asistencia {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.agregar-asistencia p a {
+  text-decoration: none;
+  color: rgb(7, 38, 131);
+  margin-top: 1.7%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+/*============================ EDITAR Y AGREGAR ==============================*/
+.agregarUsuario{
+    background:url(../imagenes/login-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.agregarMateria{
+  background:url(../imagenes/login-fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10.64%;
+}
+
+.editarUsuario {
+  background:url(../imagenes/login-fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+.editarUsuario .agregarUsuario-grupo {
+  background-color: white;
+  border: 2px solid white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 716px;
+  height: 481px;
+  box-shadow: 3px 3px 6px black;
+}
+
+.agregarMateria .agregarMateria-grupo {
+  background-color: white;
+  border: 2px solid white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 49%;
+  height: 281px;
+  box-shadow: 3px 3px 6px black;
+}
+
+.agregarMateria-grupo p {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 23px;
+  font-family: 'Roboto_Flex';
+}
+
+.agregarUsuario-grupo{
+    background-color: white;
+    border: 2px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 710px;
+    height: 540px;
+    box-shadow: 3px 3px 6px black;
+}
+
+.agregarMateria-titulo{
+  background: radial-gradient(circle, rgba(79,183,237,1) 0%, rgba(24,71,126,1) 100%);
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+  box-shadow: 3px 3px 6px black;
+  width: 46%;
+  margin-top: 1%;
+  text-align: center;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: solid 4px blue;
+}
+
+.agregarUsuario-titulo {
+ background: radial-gradient(circle, rgba(79,183,237,1) 0%, rgba(24,71,126,1) 100%);
+ color: white;
+ font-size: 30px;
+ font-family: sans-serif;
+ box-shadow: 3px 3px 6px black;
+ width: 53%;
+ margin-top: 1%;
+ text-align: center;
+ padding: 20px;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ border-bottom: solid 4px blue;
+}
+
+.agregarMateria-grupo div input {
+  height: 40px;
+  margin-left: 27%;
+  margin-top: 19px;
+  font-size: 20px;
+}
+
+.agregarUsuario-grupo div input, .agregarUsuario-grupo div select{
+  height: 40px;
+  margin-left: 45px;
+  margin-top: 14px;
+  font-size: 20px;
+}
+
+.agregar-usuario-apellido input, .agregar-usuario-nombre input, .editar-usuario-apellido input, .editar-usuario-nombre input{
+  width: 250px;
+}
+
+.agregar-usuario-apellido, .agregar-usuario-curso, .agregar-usuario-lista, .agregar-usuario-clave, .agregar-usuario-fecha-profesor, .editar-usuario-apellido, .editar-usuario-telefono, .editar-usuario-clave, .editar-usuario-curso, .editar-usuario-sexo {
+  position: absolute;
+  margin-left: 26%;
+}
+
+.agregar-usuario-correo input, .agregar-usuario-direccion input, .editar-usuario-correo input {
+  width: 55%;
+}
+
+.editar-usuario-direccion input {
+  width: 40%;
+}
+
+.editar-materia-viernes, .editar-materia-jueves, .editar-materia-miercoles, .editar-materia-martes, .editar-materia-lunes {
+  height: 40px;
+  margin-left: 70px;
+  font-size: 20px;
+}
+
+.editar-materia-lunes, .editar-materia-martes, .editar-materia-hora {
+  margin-top: 15.5px;
+}
+
+.editar-materia-hora {
+  height: 34px;
+  width: 27%;
+  margin-left: 70px;
+  font-size: 20px;
+}
+
+.editar-materia-grupo-derecho {
+  top: 20%;
+  position: absolute;
+  margin-left: 26%;
+}
+
+.titulo-editar-materia {
+  position: relative;
+  font-size: 22px;
+  left: 40px;
+  margin-top: 50px;
+}
+
+.titulo-editar-materia-izquierdo {
+  position: relative;
+  font-size: 22px;
+  left: 70px;
+  margin-top: 50px;
+}
+
+.agregar-usuario-botones-editar {
+  position: absolute;
+  left: 40%;
+  margin-top: 30px;
+}
+
+.agregar-usuario-botones-editar-2 {
+  position: absolute;
+  left: 40%;
+  bottom: 10%;
+}
+
+.agregar-usuario-botones-editar p {
+  margin-left: 70px;
+}
+
+.agregar-usuario-botones-editar-2 p, .agregar-materia-botones p {
+  margin-left: 40px;
+}
+
+.agregar-usuario-botones-editar-2 p a, .agregar-usuario-botones-editar p a, .agregar-materia-botones p a {
+  text-decoration: none;
+}
+
+.agregar-usuario-botones{
+  padding-top: 20px;
+  position: absolute;
+  top: 85%;
+  left: 39%;
+}
+
+.agregar-materia-botones {
+  padding-top: 20px;
+  position: absolute;
+  top: 55%;
+  left: 42%;
+}
+
+.agregar-materia-botones-3{
+  padding-top: 20px;
+  position: absolute;
+  top: 55%;
+  left: 42%;
+}
+
+.agregar-materia-botones input, .agregar-materia-botones-3 input {
+  margin: 10px 0 0 20px;
+  padding: 10px 50px;
+  background: radial-gradient(circle, rgba(79,183,237,1) 0%, rgba(24,71,126,1) 100%);
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.agregar-usuario-botones input, .boton-guardar{
+  margin: 10px 0 0 20px;
+  padding: 0 50px;
+  background: radial-gradient(circle, rgba(79,183,237,1) 0%, rgba(24,71,126,1) 100%);
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.agregar-usuario-botones input:hover, .boton-guardar:hover, .agregar-materia-botones-3 input:hover {
+  background: radial-gradient(circle, rgba(26, 134, 190, 1) 0%, rgba(2, 41, 85, 1) 100%);
+  color: rgb(255, 254, 254);
+  transition: 1s;
+}
+
+.agregar-usuario-botones p a, .editar-estudiante-botones p a {
+  text-decoration: none;
+}
+
+.agregar-usuario-botones p{
+  margin-left: 30%;
+}
+
+.agregar-materia-botones-3 p {
+  margin-left: 22%;
+}
+
+/*============================ FOOTER ALL ==================================*/
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: rgba(3, 4, 29, 0.9);
+  padding: 25px;
+  width: 96.3%;
+}
+
+footer p {
+  font-size: 12px;
+  font-family: arial;
+  color: white;
+}
+
+/*==========================================================================*/
+/*=========================== MEDIA QUERY ==================================*/
+/*==========================================================================*/
+
+@media screen and (max-width:1300px) {
+  /*================= ADMIN INICIO ==============================*/
+ .tabla-accesorapido{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.tabla-accesorapido table{
+  margin-bottom: 10px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+
+}
+.tabla-accesorapido table tr{
+  min-width: 200px;
+  padding: 20px;
+}
+.tabla-accesorapido table th{
+  padding: 10px;
+  width: 98%;
+}
+}
+
+@media screen and (max-width:1010px) {
+   /*================= Menu all ========================*/
+       .menu-all{
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+       }
+
+        .menu-all .conexion_usuario{
+          width:100%;
+         position: static;
+         padding: 0;
+          margin-top: 20px;
+         margin-bottom: 20px;
+         justify-content: center;
+        }
+
+        #imagen-fondo-header{
+          min-height: 600px;
+        }
+
+      .lista-padre-menu{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+         transition: 0.5s;
+          }
+
+
+          .lista-menu{
+          width: 100%;
+          border-top: 0.1px solid white;
+          margin: 0;
+          display: flex;
+        }
+
+        .lista-padre-menu:last-child {
+          border-bottom:1px solid white;
+        }
+
+        .lista-menu a{
+          width: 100%;
+          text-align: center;
+        }
+
+        .lista-menu:hover a{
+            width: 100%;
+              background-color: #5e5cff7c;
+              border-radius: 0;
+              width: 100%;
+              text-align: center;
+        }
+
+      }
+
+      @media screen and (max-width:1010px) {
+        header{
+        position: static;
+        margin-bottom: 100px;
+       }
+       .menu-all{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        height: 220px;
+        flex-wrap: wrap;
+       }
+
+        .menu-all .conexion_usuario{
+          width:100%;
+         position: static;
+         padding: 0;
+
+          margin-top: 20px;
+         margin-bottom: 20px;
+         justify-content: center;
+        }
+
+        #imagen-fondo-header{
+          min-height: 220px;
+        }
+
+      .lista-padre-menu{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+         transition: 0.5s;
+         position: static;
+          }
+
+
+          .lista-menu{
+          width: 100%;
+          margin: 0;
+          display: flex;
+        }
+        .contenedor-logo{
+          width: 100%;
+          position: static;
+          display: flex;
+
+
+        }
+        .contenedor-logo-sistema{
+          justify-content: center;
+          display: flex;
+          /* background-color: #fff; */
+        }
+
+
+        .lista-menu a{
+          width: 100%;
+          text-align: center;
+        }
+
+        .lista-menu:hover a{
+            /* width: 100%; */
+              background-color: #5e5cff7c;
+              border-radius: 0;
+              width: 100%;
+              text-align: center;
+        }
+        footer{
+          width: 94%;
+        }
+      }

@@ -1,15 +1,18 @@
 # Colegio-Vermillion
-This is a website created by Miguel, Ismanol, Joshua and Yeremy. It is about an imaginary school created by us where it has a login system
+Este es un sitio web creado por Miguel, Ismanol, Joshua y Yeremy. Trata sobre una escuela imaginaria creada por nosotros, la cual cuenta con un sistema de inicio de sesión.
 
-* Upon entering you can see the beginning of the school content.
-* In Academico, you can view the activities that studying at this school provides.
-* In Admisiones, you can view the requirements for each educational level provided by this school and a form to request entry to this academic center.
-* In Contacto, you can view our information to contact us with any questions or suggestions.
+* Al ingresar puedes ver el inicio del contenido de la escuela.
+* En Academico, puedes ver las actividades que ofrece estudiar en esta escuela.
+* En Admisiones, puedes ver los requisitos para cada nivel educativo que ofrece esta escuela y un formulario para solicitar el ingreso a este centro académico.
+* En Contacto, puedes ver nuestra información para contactarnos ante cualquier pregunta o sugerencia.
 
-Functions of the school system when logging in.
+Funciones del sistema escolar al iniciar sesión.
 
-In this section, depending on how you start, some functions will be shown.
+En esta sección, dependiendo de cómo inicies sesión, se mostrarán algunas funciones.
 
-- If you start as a student, you will be able to see the subjects of the course you are in, information about that student and the grades published at the time.
-- When you start as a teacher, it will show data about the teacher who started, you can view the students of each course, the course that corresponds to them and their subjects. Additionally, you can add, modify or delete notes and assistance to students depending on whether it is that teacher's subject.
-- When you log in as an administrator you can delete, edit or add students or teachers, in addition to editing subjects, student or teacher information, courses, attendance, grades and schedules.
+- Si inicias sesión como estudiante, podrás ver las materias del curso en el que estás, información sobre ese estudiante y las calificaciones publicadas hasta el momento.
+- Cuando inicias sesión como docente, se mostrarán los datos del docente que inició sesión, podrás ver los estudiantes de cada curso, el curso que les corresponde y sus materias. Además, podrás agregar, modificar o eliminar calificaciones y asistencias de los estudiantes dependiendo de si corresponde a la materia de ese docente.
+- Cuando inicias sesión como administrador, podrás eliminar, editar o agregar estudiantes o docentes, además de editar materias, información de estudiantes o docentes, cursos, asistencias, calificaciones y horarios.
+
+
+

@@ -14,5 +14,10 @@ En esta sección, dependiendo de cómo inicies sesión, se mostrarán algunas fu
 - Cuando inicias sesión como docente, se mostrarán los datos del docente que inició sesión, podrás ver los estudiantes de cada curso, el curso que les corresponde y sus materias. Además, podrás agregar, modificar o eliminar calificaciones y asistencias de los estudiantes dependiendo de si corresponde a la materia de ese docente.
 - Cuando inicias sesión como administrador, podrás eliminar, editar o agregar estudiantes o docentes, además de editar materias, información de estudiantes o docentes, cursos, asistencias, calificaciones y horarios.
 
+## Herramientas
 
-
+- HTML
+- CSS
+- Javascript
+- PHP
+- MySQL
